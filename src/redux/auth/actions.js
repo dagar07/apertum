@@ -1,0 +1,26 @@
+const actions = {
+  CHECK_AUTHORIZATION_REQUEST: 'CHECK_AUTHORIZATION_REQUEST',
+  CHECK_AUTHORIZATION_SUCCESS: 'CHECK_AUTHORIZATION_SUCCESS',
+  CHECK_AUTHORIZATION_FAILURE: 'CHECK_AUTHORIZATION_FAILURE',
+
+  LOGIN_REQUEST: 'LOGIN_REQUEST',
+  LOGIN_SUCCESS: 'LOGIN_SUCCESS',
+  LOGIN_FAILURE: 'LOGIN_FAILURE',
+
+  LOGOUT_REQUEST: 'LOGOUT_REQUEST',
+  LOGOUT_SUCCESS: 'LOGOUT_SUCCESS',
+  LOGOUT_FAILURE: 'LOGOUT_FAILURE',
+  checkAuthrization: (payload) => ({
+    type: actions.CHECK_AUTHORIZATION_REQUEST,
+    payload
+  }),
+  login: (payload) => ({
+    type: actions.LOGIN_REQUEST,
+    payload
+  }),
+  logout: () => ({
+    type: actions.LOGOUT_REQUEST
+  })
+}
+
+export default actions
