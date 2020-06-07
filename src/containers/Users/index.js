@@ -14,7 +14,6 @@ class Users extends Component {
 
   componentDidMount () {
     // call api to get the users list
-    console.log('tilak user data')
     this.props.getUsersList()
   }
 
