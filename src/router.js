@@ -32,7 +32,6 @@ const RestrictedRoute = ({ component: Component, isLoggedIn, ...rest }) => {
 }
 
 function AppRoutes ({ history, isLoggedIn }) {
-  console.log(isLoggedIn)
   return (
     <Router history={history}>
       <ThemeProvider theme={COLOR}>

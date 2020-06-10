@@ -10,7 +10,7 @@ class Input extends Component {
   }
 
   render() {
-    const { placeholder, type, onChange, value, defaultValue } = this.props
+    const { placeholder, type, onChange, value, defaultValue, className } = this.props
     return (
       <InputStyleWrapper
         placeholder={placeholder}
@@ -18,6 +18,7 @@ class Input extends Component {
         value={value}
         defaultValue={defaultValue}
         onChange={onChange}
+        className={className}
       />
     )
   }

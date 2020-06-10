@@ -19,11 +19,9 @@ class Login extends Component {
 
   componentWillReceiveProps (nextProps) {
     const { loginStatus, userToken } = nextProps
-    console.log(loginStatus, userToken)
     if (loginStatus === 'success' && userToken) {
       // this is used to move the user list
       saveTokenInCookies(userToken)
-      console.log('login true')
       this.props.history.push('/user/list')
     }
   }
@@ -58,12 +56,14 @@ class Login extends Component {
                 type='text'
                 onChange={(e) => this.handleInputChange(e, 'accountId')}
                 placeholder='User Id'
+                className='login-input'
                 value={this.state.accountId}
               />
               <Input
                 type='password'
                 onChange={(e) => this.handleInputChange(e, 'pswd')}
                 placeholder='Enter Password'
+                className='login-input'
                 value={this.state.pswd}
               />
               <Button onClick={this.handleOnLogin}>

@@ -7,6 +7,12 @@ export const LoginStyle = styled(DisplayRCC)`
   .loader {
     width: 40%;
   }
+
+  @media only screen and (min-width: 320px) and (max-width: 763px) {
+    .loader {
+      width: 80%;
+    }
+  }
 `
 
 export const LoginFormStyle = styled(DisplayFlexCCC)`
@@ -14,4 +20,14 @@ export const LoginFormStyle = styled(DisplayFlexCCC)`
   background-color: ${props => props.theme.white};
   padding: 30px;
   position: relative;
+
+  .login-input {
+    width: 30%;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 763px) {
+    .login-input {
+      width: 80%;
+    }
+  }
 `

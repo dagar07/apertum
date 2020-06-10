@@ -11,7 +11,7 @@ export const ButtonStyleWrapper = styled.button`
   box-shadow: 0px 0.5px 4.5px 1px ${props => props.theme.borderGrey};
 
   &:disabled {
-    background-color: ${props => props.theme.grey};
-    border: 1px solid ${props => props.theme.grey};
+    background-color: ${props => props.theme.grey} !important;
+    border: 1px solid ${props => props.theme.grey} !important;
   }
 `

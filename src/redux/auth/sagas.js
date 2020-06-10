@@ -12,7 +12,6 @@ export function * checkAuthrization () {
         userToken: payload.userToken,
         message: 'success'
       })
-      console.log('tilak CHECK_AUTHORIZATION_REQUEST 2')
       yield put(push('/user/list'))
     } else {
       yield put({
